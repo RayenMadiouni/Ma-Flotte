@@ -21,28 +21,26 @@ public class Ligne {
     private String num;
     private TypeLigne type;
     private Statut statut;
-    private Employe employe;
-    private Flotteur flotteur;
     private int appelsMinutes;
     private int nombreSMS;
     private double dataGo;
+    private Employe employe;
 
 
 
-
-    public Ligne( String num, TypeLigne type, Statut statut, Employe employe,Flotteur Id_flotteur, int appelsMinutes, int nombreSMS, double dataGo) {
+    public Ligne( String num, TypeLigne type, Statut statut,  int appelsMinutes, int nombreSMS, double dataGo, Employe employe) {
 
         this.num = num;
         this.type = type;
         this.statut = statut;
-        this.employe = employe;
-        this.flotteur = flotteur;
+
         this.appelsMinutes = appelsMinutes;
         this.nombreSMS = nombreSMS;
         this.dataGo = dataGo;
+        this.employe = employe;
     }
 
-    // 🧱 + getters/setters complets
+
     public String getId_ligne() {
         return Id_ligne;
     }
@@ -75,21 +73,15 @@ public class Ligne {
         return employe;
     }
 
-    public Flotteur getFlotteur() {
-        return flotteur;
-    }
+
 
     public void setStatut(Statut statut) {
         this.statut = statut;
     }
 
-    public Employe getId_employe() {
-        return employe;
-    }
 
-    public void setId_employe(Employe id_employe) {
-        employe = id_employe;
-    }
+
+
 
     public int getAppelsMinutes() {
         return appelsMinutes;
@@ -115,7 +107,9 @@ public class Ligne {
         this.dataGo = dataGo;
     }
 
-
+    public void setEmploye(Employe employe) {
+        this.employe = employe;
+    }
 
 
 }

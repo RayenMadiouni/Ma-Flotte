@@ -10,7 +10,7 @@ public interface LigneRepo extends MongoRepository<Ligne,String> {
 
     void deleteByNum(String num);
     Optional<Ligne> findByNum(String num); // pour vérifier s’il existe
-    List<Ligne> findByFlotteurNum(String num);
+
 
 
 }

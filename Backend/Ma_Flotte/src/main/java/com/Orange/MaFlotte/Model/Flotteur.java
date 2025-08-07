@@ -22,6 +22,8 @@ public class Flotteur {
     private String nom_flotteur;
     private String prenom_flotteur;
 
+
+
     public Flotteur(String nom_flotteur,String prenom_flotteur) {
         this.nom_flotteur = nom_flotteur;
         this.prenom_flotteur = prenom_flotteur;

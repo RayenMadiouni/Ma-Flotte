@@ -13,18 +13,19 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 public class Employe {
     @Id
-    private  String Idemploye;
+    private  String idemploye;
     private  String nom_employe;
     private String prenom_employe;
-    private int Id_entreprise;
+    private String Id_entreprise;
 
-    public Employe(String nom_employe, String prenom_employe) {
+    public Employe(String nom_employe, String prenom_employe, String Id_entreprise) {
         this.nom_employe = nom_employe;
         this.prenom_employe = prenom_employe;
+        this.Id_entreprise = Id_entreprise;
     }
 
     public String getIdemploye() {
-        return Idemploye;
+        return idemploye;
     }
 
     public String getNom_employe() {
@@ -35,7 +36,7 @@ public class Employe {
         return prenom_employe;
     }
 
-    public int getId_entreprise() {
+    public String getId_entreprise() {
         return Id_entreprise;
     }
 }

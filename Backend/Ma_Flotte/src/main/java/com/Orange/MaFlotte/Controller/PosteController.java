@@ -14,8 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 public class PosteController {
 
-    @Autowired
-    FlotteurRepo flotteurRepo;
+
     @Autowired
     private PosteRepo posteRepo;
 
