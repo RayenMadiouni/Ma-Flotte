@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 async function fetchLignes() {
     try {
-        const response = await fetch('https://273668e3a60f.ngrok-free.app/api/lignes/all', {
+        const response = await fetch('https://66377b3d25c9.ngrok-free.app/api/lignes/all', {
             headers: {
                 'ngrok-skip-browser-warning': 'true'
             }

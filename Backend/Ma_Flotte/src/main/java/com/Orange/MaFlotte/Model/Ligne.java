@@ -28,7 +28,8 @@ public class Ligne {
 
 
 
-    public Ligne( String num, TypeLigne type, Statut statut,  int appelsMinutes, int nombreSMS, double dataGo, Employe employe) {
+
+    public Ligne( String num, TypeLigne type, Statut statut,  int appelsMinutes, int nombreSMS, double dataGo, Employe employe ) {
 
         this.num = num;
         this.type = type;
@@ -38,8 +39,13 @@ public class Ligne {
         this.nombreSMS = nombreSMS;
         this.dataGo = dataGo;
         this.employe = employe;
-    }
 
+    }
+  public Ligne(String num, TypeLigne type,Employe employe){
+        this.num = num;
+        this.type = type;
+        this.employe = employe;
+  }
 
     public String getId_ligne() {
         return Id_ligne;

@@ -13,22 +13,23 @@ public class Facture {
 
     @Id
     private String Id_facture;
-    private String num;
+
     private float montant;
     private EtatFacture etat;
     private LocalDateTime datePaiement;
-    private String Id_ligne;
+
+    private Ligne ligne;
 
     public Facture() {
         // Constructeur vide obligatoire pour JPA
     }
 
-    public Facture(String num, float montant, EtatFacture etat, LocalDateTime date,String Id_ligne) {
-        this.num=num;
+    public Facture( float montant, EtatFacture etat, LocalDateTime date,Ligne ligne) {
+
         this.montant = montant;
         this.etat = etat;
         this.datePaiement = date;
-        this.Id_ligne = Id_ligne;
+        this.ligne = ligne;
     }
 
     // Getters & setters
@@ -66,19 +67,19 @@ public class Facture {
         this.datePaiement = datePaiement;
     }
 
-    public String getId_ligne() {
-        return Id_ligne;
+    public Ligne getligne() {
+        return ligne;
     }
 
-    public void setId_ligne(String Id_ligne) {
-        this.Id_ligne = Id_ligne;
+    public void setligne(Ligne ligne) {
+        this.ligne = ligne;
     }
 
-    public String getNum() {
-        return num;
+    public Ligne getLigne() {
+        return ligne;
     }
 
-    public void setNum(String num) {
-        this.num = num;
+    public void setLigne(Ligne ligne) {
+        this.ligne = ligne;
     }
 }
