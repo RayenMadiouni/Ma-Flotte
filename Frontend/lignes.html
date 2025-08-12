@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Gestion des lignes - Ma Flotte</title>
+  <link rel="stylesheet" href="lignes.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="toolbar">
+    <span class="toolbar-title">Ma Flotte</span>
+  </div>
+
+  <div class="sidebar"></div>
+
+  <div class="container">
+    <header class="header">
+      <img src="logo.png" alt="Orange Logo" class="logo">
+      <h1>Mes Lignes</h1>
+
+      <div class="header-actions">
+        <div class="search-bar">
+          <input type="text" id="searchInput" placeholder=" Rechercher ...">
+        </div>
+        <button id="facturesBtn" class="factures-btn">Mes Factures</button>
+      </div>
+    </header>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Employé</th>
+          <th>Numéro</th>
+          <th>Type</th>
+          <th>Statut</th>
+          <th>Consommation</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Données dynamiques ici -->
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Popup Charger -->
+  <div id="popupCharge" class="popup hidden">
+    <div class="popup-content">
+      <h2>Charger la ligne</h2>
+      <p id="ligneSelectionnee"></p>
+      
+      <label>Minutes d'appel à charger :</label>
+      <select id="minutesSelect"></select>
+
+      <label>Nombre de SMS à charger :</label>
+      <select id="smsSelect"></select>
+
+      <label>Données Internet (Go) à charger :</label>
+      <select id="goSelect"></select>
+
+      <div class="popup-buttons">
+        <button id="validerCharge">Valider</button>
+        <button id="annulerCharge">Annuler</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="lignes.js"></script>
+</body>
+</html>

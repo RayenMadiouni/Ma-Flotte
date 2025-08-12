@@ -1,9 +1,7 @@
 package com.Orange.MaFlotte.Controller;
 
 import com.Orange.MaFlotte.Model.Facture;
-import com.Orange.MaFlotte.Model.FactureDTO;
 import com.Orange.MaFlotte.Model.Ligne;
-import com.Orange.MaFlotte.Model.TypeLigne;
 import com.Orange.MaFlotte.Repo.EmployeRepo;
 import com.Orange.MaFlotte.Repo.FactureRepo;
 import com.Orange.MaFlotte.Repo.LigneRepo;

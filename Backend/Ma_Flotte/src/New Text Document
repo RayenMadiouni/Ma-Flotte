@@ -1,0 +1,20 @@
+# Utilise une image Java 17 officielle et légère
+FROM openjdk:17-jdk-alpine
+
+# Définit le dossier de travail dans le container
+WORKDIR /app
+
+# Copie tout le contenu du dossier Backend/Ma_Flotte dans /app dans le container
+COPY . .
+
+# Donne les permissions d'exécution au mvnw (utile si besoin)
+RUN chmod +x ./mvnw
+
+# Compile et package l'application
+RUN ./mvnw clean package -DskipTests
+
+# Expose le port 8080 (port par défaut Spring Boot)
+EXPOSE 8080
+
+# Commande pour lancer l'application (remplace le nom du jar)
+CMD [java -jar target/MaFlotte-0.0.1-SNAPSHOT.jar]

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Connexion - Ma Flotte</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="left-section">
+            <img src="logo.png" alt="Orange Logo" class="logo">
+            <h1>Bienvenue sur l'Espace Client Entreprise</h1>
+            <p class="subtext">Merci de vous authentifier</p>
+
+            <!-- Formulaire de connexion -->
+            <form id="loginForm">
+                <label for="num">Renseignez votre Numéro</label>
+                <input type="text" id="userNum" name="num" placeholder="Numéro du flotteur" required>
+                
+                <button type="submit">Suivant</button>
+            </form>
+
+            <!-- Message d'erreur -->
+            <div id="errorMsg" style="color: red; margin-top: 10px;"></div>
+
+            <!-- Nouvelle inscription -->
+            <div class="new-client">
+                <p>Nouveau client ?</p>
+                <button class="create-account" onclick="alert('Fonctionnalité à venir')">Créer votre compte</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>

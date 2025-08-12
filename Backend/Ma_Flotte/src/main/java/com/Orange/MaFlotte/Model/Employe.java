@@ -24,6 +24,11 @@ public class Employe {
         this.Id_entreprise = Id_entreprise;
     }
 
+    public Employe(String nomEmploye, String prenomEmploye) {
+        this.nomEmploye = nomEmploye;
+        this.prenomEmploye = prenomEmploye;
+    }
+
     public String getIdemploye() {
         return idemploye;
     }

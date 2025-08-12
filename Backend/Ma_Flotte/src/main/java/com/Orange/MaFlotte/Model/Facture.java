@@ -67,17 +67,13 @@ public class Facture {
         this.datePaiement = datePaiement;
     }
 
-    public Ligne getligne() {
-        return ligne;
-    }
-
-    public void setligne(Ligne ligne) {
-        this.ligne = ligne;
-    }
-
     public Ligne getLigne() {
         return ligne;
     }
+
+
+
+
 
     public void setLigne(Ligne ligne) {
         this.ligne = ligne;

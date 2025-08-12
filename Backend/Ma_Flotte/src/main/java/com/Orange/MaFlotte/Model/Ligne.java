@@ -25,11 +25,12 @@ public class Ligne {
     private int nombreSMS;
     private double dataGo;
     private Employe employe;
+    private String UserNum;
 
 
 
 
-    public Ligne( String num, TypeLigne type, Statut statut,  int appelsMinutes, int nombreSMS, double dataGo, Employe employe ) {
+    public Ligne( String num, TypeLigne type, Statut statut,  int appelsMinutes, int nombreSMS, double dataGo, Employe employe, String UserNum ) {
 
         this.num = num;
         this.type = type;
@@ -39,7 +40,7 @@ public class Ligne {
         this.nombreSMS = nombreSMS;
         this.dataGo = dataGo;
         this.employe = employe;
-
+        this.UserNum = UserNum;
     }
   public Ligne(String num, TypeLigne type,Employe employe){
         this.num = num;
@@ -86,8 +87,13 @@ public class Ligne {
     }
 
 
+    public String getUserNum() {
+        return UserNum;
+    }
 
-
+    public void setUserNum(String userNum) {
+        UserNum = userNum;
+    }
 
     public int getAppelsMinutes() {
         return appelsMinutes;

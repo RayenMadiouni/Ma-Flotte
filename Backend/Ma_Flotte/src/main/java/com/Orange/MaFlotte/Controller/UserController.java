@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/user")
 public class UserController {
@@ -25,7 +25,7 @@ public class UserController {
     }
     @GetMapping("/exists/{num}")
     public boolean checkIfUserExists(@PathVariable("num") String num) {
-        return userRepo.existsByNum(num);
+        return userRepo.existsByUserNum(num);
     }
 
 

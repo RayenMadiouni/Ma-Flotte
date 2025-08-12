@@ -16,7 +16,8 @@
 	<groupId>com.Orange</groupId>
 	<artifactId>MaFlotte</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Ma_Flotte</name>
+    <packaging>jar</packaging>
+    <name>Ma_Flotte</name>
 	<description>Ma_Flotte project for Spring Boot</description>
 
 	<properties>

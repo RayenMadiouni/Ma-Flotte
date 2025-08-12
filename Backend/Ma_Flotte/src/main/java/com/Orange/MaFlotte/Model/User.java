@@ -15,7 +15,7 @@ import javax.management.relation.Role;
 @NoArgsConstructor
 public class User {
     @Id
-    private String num;
+    private String userNum;
     private String mail;
     private String role;
 
@@ -26,7 +26,7 @@ public class User {
     }
 
     public String getNum() {
-        return num;
+        return userNum;
     }
 
     public String getMail() {
@@ -35,5 +35,10 @@ public class User {
 
     public String getRole() {
         return role;
+    }
+
+
+    public void setUserNum(String userNum) {
+        userNum = userNum;
     }
 }
